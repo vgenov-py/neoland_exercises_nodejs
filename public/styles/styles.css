@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    font-size: small;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    color: #333c4e;
+}
+
+#navbar {
+    margin-bottom: 5%;
+}
+
+.navbar-brand {
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.nav-item {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 1px;
+    transition: all 1s ease-in;
+}
+
+.nav-item:hover {
+    /* border-bottom-width: 1px; */
+    border-bottom: solid 2px #ee565b;
+    /* text-decoration-color: #ee565b; */
+}
+
+.online {
+    text-transform: uppercase;
+    width: 120px;
+    border-radius: 60px;
+    border: solid #333c4e 2px;
+}
+
+.online:hover {
+    text-decoration: none;
+}
+
+.online:hover {
+    color: white;
+    border-radius: 60px;
+    background-color: #333c4e;
+}
+
+.contactar {
+    background-color: #ee565b;
+    width: 120px;
+    border-radius: 60px;
+}
+
+.left-card {
+    margin-left: 5%;
+}

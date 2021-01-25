@@ -1,0 +1,5 @@
+[
+    { "id": 1, "name": "UX/UI Design", "duration": "1 año" },
+    { "id": 2, "name": "Data Science", "duration": "6 meses" },
+    { "id": 3, "name": "Full Stack", "duration": "3 meses" }
+]
