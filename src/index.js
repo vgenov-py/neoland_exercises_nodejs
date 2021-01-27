@@ -1,17 +1,28 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const courses = require("./courses.json");
+const fetch = require("node-fetch");
 
 app.use(express.static(path.join(__dirname, "../public")));
 app.set("view engine", "ejs");
 
-app.get("/", (req, res) => {
+app.get("/api", async(req, res) => {
+    const kuga = await fetch("http://localhost:4000");
+    const data = await kuga.json();
+    res.send(data);
+});
+app.get("/", async(req, res) => {
+    const kuga = await fetch("http://localhost:4000");
+    const data = await kuga.json();
+    res.locals.courses = data;
+
     res.render("../public/index");
 });
 
-app.get("/cursos", (req, res) => {
-    res.locals.courses = courses;
+app.get("/cursos", async(req, res) => {
+    const kuga = await fetch("http://localhost:4000");
+    const data = await kuga.json();
+    res.locals.courses = data;
     res.render("../public/course");
 });
 

@@ -31,14 +31,24 @@ body {
     /* text-decoration-color: #ee565b; */
 }
 
+#dropDownMenu {
+    background-color: #333c4e;
+    color: white;
+}
+
+#dropDownMenu li:hover {
+    background-color: red;
+}
+
 .online {
     text-transform: uppercase;
     width: 120px;
     border-radius: 60px;
-    border: solid #333c4e 2px;
+    border: solid #333c4e 3px;
 }
 
 .online:hover {
+    color: white;
     text-decoration: none;
 }
 
